@@ -5,7 +5,7 @@ Crosswalks from native JPER JSON metadata to supported formats by OAI
 from lxml import etree
 from copy import deepcopy
 from service.xml import set_text
-from octopus.modules.jper import models
+from standalone_octopus.modules.jper import models
 from service import oaitools
 
 #####################################################################

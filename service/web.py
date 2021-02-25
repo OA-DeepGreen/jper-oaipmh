@@ -9,7 +9,7 @@ To start the application directly using the python web server, you can just do
 
 Refer to server installation documentation for more details how to deploy in production.
 """
-from octopus.core import app, initialise, add_configuration
+from standalone_octopus.core import app, initialise, add_configuration
 
 if __name__ == "__main__":
     import argparse
@@ -29,7 +29,7 @@ if __name__ == "__main__":
         app.config['DEBUG'] = False
         import pydevd
         pydevd.settrace(app.config.get('DEBUG_SERVER_HOST', 'localhost'), port=app.config.get('DEBUG_SERVER_PORT', 51234), stdoutToServer=True, stderrToServer=True)
-        print "STARTED IN REMOTE DEBUG MODE"
+        print("STARTED IN REMOTE DEBUG MODE")
 
     initialise()
 
