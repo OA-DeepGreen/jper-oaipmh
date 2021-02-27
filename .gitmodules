@@ -1,4 +1,4 @@
 [submodule "esprit"]
 	path = esprit
 	url = git@github.com:OA-DeepGreen/esprit.git
-	branch = master
+	branch = python3
