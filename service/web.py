@@ -9,7 +9,7 @@ To start the application directly using the python web server, you can just do
 
 Refer to server installation documentation for more details how to deploy in production.
 """
-from standalone_octopus.core import app, initialise, add_configuration
+from octopus.core import app, initialise, add_configuration
 
 if __name__ == "__main__":
     import argparse

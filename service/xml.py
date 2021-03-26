@@ -3,7 +3,7 @@ Some useful tools for dealing with the oddities of XML serialisation
 """
 
 import re, sys
-from standalone_octopus.core import app
+from octopus.core import app
 
 ###########################################################
 # XML Character encoding hacks

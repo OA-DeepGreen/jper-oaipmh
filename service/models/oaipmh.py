@@ -1,9 +1,9 @@
 """
 Model objects which bind the OAI-PMH records to the JPER API
 """
-from standalone_octopus.core import app
-from standalone_octopus.lib import dates
-from standalone_octopus.modules.jper import client
+from octopus.core import app
+from octopus.lib import dates
+from octopus.modules.jper import client
 import math
 
 class OAIPMHRecord(object):

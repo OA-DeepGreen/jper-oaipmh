@@ -8,9 +8,9 @@ Blueprint that provides the web routes for the OAI endpoint for:
 from lxml import etree
 from datetime import datetime, timedelta
 from flask import Blueprint, request, make_response
-from standalone_octopus.core import app
+from octopus.core import app
 from service.models import OAIPMHAll, OAIPMHRepo
-from standalone_octopus.lib import plugin
+from octopus.lib import plugin
 from service import oaitools
 
 blueprint = Blueprint('oaipmh', __name__)

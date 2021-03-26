@@ -4,7 +4,7 @@ A set of useful functions for working with OAI-PMH data
 
 from datetime import datetime
 import base64, json
-from standalone_octopus.core import app
+from octopus.core import app
 
 class DateFormat(object):
     """
