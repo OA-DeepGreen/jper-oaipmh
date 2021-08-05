@@ -74,7 +74,7 @@ def make_set_spec(setspec):
     :param setspec: the name of the set
     :return: the encoded name of the set
     """
-    return base64.urlsafe_b64encode(setspec).replace("=", "~")
+    return str(base64.urlsafe_b64encode(setspec)).replace("=", "~")
 
 def decode_set_spec(setspec):
     """
@@ -108,7 +108,7 @@ def make_resumption_token(metadata_prefix=None, from_date=None, until_date=None,
     if start_number is not None:
         d["n"] = start_number
     j = json.dumps(d)
-    b = base64.urlsafe_b64encode(j)
+    b = base64.urlsafe_b64encode(j.encode())
     return b
 
 class ResumptionTokenException(Exception):
