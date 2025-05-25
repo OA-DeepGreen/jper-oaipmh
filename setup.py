@@ -7,7 +7,7 @@ setup(
     install_requires=[
         "esprit",
         "octopus",
-        "Flask==1.1.2"
+        "Flask<3.0"
     ],
     url='http://cottagelabs.com/',
     author='Cottage Labs',
