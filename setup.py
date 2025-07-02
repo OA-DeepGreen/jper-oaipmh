@@ -2,12 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='jper-oaipmh',
-    version='1.0.1',
+    version='1.0.2',
     packages=find_packages(),
     install_requires=[
         "esprit",
         "octopus",
-        "Flask==1.1.2"
+        "Flask<3.0",
+        "gunicorn"
     ],
     url='http://cottagelabs.com/',
     author='Cottage Labs',
